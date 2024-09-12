@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'whyteMono';
+  src: url('https://fonts.iggcdn.com/Whyte_Mono/ABCWhyteMono-Regular.woff2')
+      format('woff2'),
+    url('https://fonts.iggcdn.com/Whyte_Mono/ABCWhyteMono-Regular.woff')
+      format('woff'),
+    url('https://fonts.iggcdn.com/Whyte_Mono/ABCWhyteMono-Regular.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'whyte';
+  src: url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Regular.woff2')
+      format('woff2'),
+    url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Regular.woff') format('woff'),
+    url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Regular.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'whyte';
+  src: url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Medium.woff2')
+      format('woff2'),
+    url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Medium.woff') format('woff'),
+    url('https://fonts.iggcdn.com/Whyte/ABCWhyte-Medium.otf') format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'whyteInktrap';
+  src: url('https://fonts.iggcdn.com/Whyte_Inktrap/ABCWhyteInktrap-Medium.woff2')
+      format('woff2'),
+    url('https://fonts.iggcdn.com/Whyte_Inktrap/ABCWhyteInktrap-Medium.woff')
+      format('woff'),
+    url('https://fonts.iggcdn.com/Whyte_Inktrap/ABCWhyteInktrap-Medium.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'guthenBloots';
+  src: url('https://fonts.iggcdn.com/guthen_bloots/WOFF2/Guthen Bloots Basic.woff2')
+      format('woff2'),
+    url('https://fonts.iggcdn.com/guthen_bloots/WOFF/Guthen Bloots Basic.woff')
+      format('woff'),
+    url('https://fonts.iggcdn.com/guthen_bloots/OTF/Guthen Bloots Basic.otf')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
