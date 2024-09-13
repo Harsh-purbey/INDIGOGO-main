@@ -5,7 +5,7 @@ const Copyright = () => {
     <div className="bg-[#1F0733]  lg:px-[60px] ">
       <div className="border-[#410E36] border-t flex justify-between py-10">
         <div>
-          <button className="p-3 rounded-xl border-[#410E36] border-2 hover:text-black hover:bg-purple-950 uppercase">
+          <button className="p-3 rounded-xl border-purple-800 hover:text-white order-2 hover:bg-purple-950 uppercase">
             ₹ Indian Rupee (INR)
           </button>
         </div>

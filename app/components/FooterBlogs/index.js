@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const FooterBlogs = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-[#1F0733]  lg:px-[93px] lg:pt-[100px] lg:pb-[43px] ">
@@ -78,8 +80,11 @@ const FooterBlogs = () => {
           </div>
         </div>
         <div className="text-center bg-[#2A133D] p-10 rounded-b-lg ">
-          <button className="p-3 rounded-xl border-disbtn border-2 hover:text-black hover:bg-disbtn">
-            START A CAMPAIGN
+          <button
+            className="p-3 rounded-xl border-disbtn border-2 hover:text-black hover:bg-disbtn"
+            onClick={() => navigate('/blog')}
+          >
+            EXPLORE THE BLOG
           </button>
         </div>
       </div>

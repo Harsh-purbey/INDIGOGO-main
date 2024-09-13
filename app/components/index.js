@@ -43,3 +43,28 @@ export const Fotter = loadable(() => import('./Fotter'), {
 export const Copyright = loadable(() => import('./Copyright'), {
   fallback: <Loading />,
 });
+
+export const BlogNav = loadable(() => import('./BlogComponents/Navbar'), {
+  fallback: <Loading />,
+});
+
+export const BlogDisplay = loadable(
+  () => import('./BlogComponents/BlogDisplay'),
+  {
+    fallback: <Loading />,
+  },
+);
+
+export const BlogFotter = loadable(
+  () => import('./BlogComponents/BlogFotter'),
+  {
+    fallback: <Loading />,
+  },
+);
+
+export const BlogCopyright = loadable(
+  () => import('./BlogComponents/BlogCopyright'),
+  {
+    fallback: <Loading />,
+  },
+);

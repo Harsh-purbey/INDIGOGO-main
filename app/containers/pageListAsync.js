@@ -7,6 +7,12 @@ export const Landing = loadable(() => import('./Landing'), {
   fallback: <Loading />,
 });
 
+//blog
+
+export const Blog = loadable(() => import('./Blog'), {
+  fallback: <Loading />,
+});
+
 // Static Pages
 export const NotFound = loadable(() => import('./NotFound'), {
   fallback: <Loading />,

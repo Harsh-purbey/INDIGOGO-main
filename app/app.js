@@ -7,7 +7,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import createReducer from './redux/reducers';
 import rootSaga from './redux/rootSaga';
-import { Landing, NotFound } from './containers/pageListAsync';
+import { Landing, NotFound, Blog } from './containers/pageListAsync';
 
 const sagaMiddleware = createSagaMiddleware();
 const reducer = createReducer();
@@ -28,6 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
