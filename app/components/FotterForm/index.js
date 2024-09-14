@@ -7,15 +7,15 @@ const FooterForm = () => {
       <p className="text-center text-[18px] font-normal">
         Exclusive weekly updates with new products, drops, and special offers.
       </p>
-      <form className=" flex justify-center gap-4">
+      <form className=" flex justify-center md:flex-row flex-col gap-4 p-4">
         <input
           type="text"
           placeholder="Your email address"
-          className="outline-none py-[2px] px-[24px] rounded w-[500px] text-[1.125rem] text-white bg-fotter-input placeholder-white"
+          className="outline-none py-[2px] px-[24px] rounded  w-full  md:w-[500px] md:text-[1.125rem] text-[1rem] text-white bg-fotter-input placeholder-white"
         />
         <button
           type="submit"
-          className="w-[200px] text-[1.125rem] bg-fotter-button py-[16px] px-[24px] rounded"
+          className=" w-full md:w-[200px] text-[1rem] md:text-[1.25rem] bg-fotter-button py-[2px] md:py-[16px] px-[24px] rounded"
         >
           SIGN ME UP
         </button>
