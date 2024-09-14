@@ -86,7 +86,7 @@ const Fotter = () => {
           {/* RIGHT END */}
         </div>
         {/* MAIN CONTAINER END */}
-        <div className="text-[#FFA6D6] uppercase text-5xl md:text-[180px] text-center font-black p-4">
+        <div className="text-[#FFA6D6] uppercase text-3xl sm:text-5xl md:text-[180px] text-center font-black p-4">
           INDIEGOGO
         </div>
       </div>

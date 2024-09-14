@@ -8,55 +8,56 @@ import { CiBookmark } from 'react-icons/ci';
 const ExploreCollections = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7];
   return (
-    <div className=" w-full bg-expbg lg:px-[93px] lg:pt-[100px] lg:pb-[43px]">
-      <div className="space-y-12">
-        <h1 className="text-center text-black text-6xl font-bold">
+    <div className=" w-full bg-expbg lg:px-[93px] lg:pt-[100px] lg:pb-[43px] py-10 px-1">
+      <div className="space-y-12 ">
+        <h1 className="text-center text-black md:text-6xl text-4xl md:font-bold font-medium">
           Explore our top collections
         </h1>
-        <div className="text-black flex justify-between font-normal uppercase cursor-pointer">
-          <div className="hover:border-b-2 border-black ">
+        <div className="text-black flex md:justify-between md:font-normal font-thin text-sm md:text-xl uppercase cursor-pointer overflow-scroll space-x-10 no-scrollbar px-4">
+          <div className=" border-black hover:underline-offset-4 hover:underline ">
             <p className=" flex justify-center">
               <CiSearch />
             </p>
-            <p>10 cool & clever finds</p>
+            <p className="text-center"> clever finds</p>
           </div>
-          <div className="hover:border-b-2 border-black ">
+          <div className="hover:underline-offset-4 hover:underline  border-black ">
             <p className=" flex justify-center">
               <CiStar />
             </p>
 
-            <p>team favorites</p>
+            <p className="text-center">team favorites</p>
           </div>
-          <div className="hover:border-b-2 border-black ">
+          <div className="hover:underline-offset-4 hover:underline  border-black ">
             <p className=" flex justify-center">
               <GiWatch />
             </p>
 
-            <p>wearable innovations</p>
+            <p className="text-center">wearable innovations</p>
           </div>
-          <div className="hover:border-b-2 border-black ">
+          <div className="hover:underline-offset-4 hover:underline  border-black ">
             <p className=" flex justify-center">
               <PiGameControllerLight />
             </p>
 
-            <p>fun & games</p>
+            <p className="text-center">fun & games</p>
           </div>
-          <div className="hover:border-b-2 border-black ">
+          <div className="hover:underline-offset-4 hover:underline  border-black ">
             <p className=" flex justify-center">
               <PiBicycleLight />
             </p>
 
-            <p>health & wellness</p>
+            <p className="text-center">health & wellness</p>
           </div>
         </div>
+
         <hr className="border-black border-b-0 text-black" />
-        <div className="grid grid-cols-4 gap-4">
+        <div className=" flex md:grid grid-cols-4 md:gap-3 gap-6 overflow-x-scroll md:overflow-hidden  no-scrollbar p-4 md:p-0">
           {arr.map((value, index) => (
             <div
               className={`${
                 0 === index
-                  ? 'col-span-2 bg-red-400 h-[300px] rounded-lg bg-cover bg-center group p-4 hover:contrast-50  transition-all duration-100'
-                  : 'bg-red-400 h-[300px] rounded-lg bg-cover bg-center group p-4 hover:contrast-50 transition-all duration-100'
+                  ? 'col-span-2 bg-red-400 md:h-[350px]  rounded-lg bg-cover bg-center group p-3 hover:contrast-50  transition-all duration-100'
+                  : 'bg-red-400 md:h-[350px]  rounded-lg bg-cover bg-center group p-3 hover:contrast-50 transition-all duration-100'
               }`}
               key={index}
               style={{ backgroundImage: 'url(./images/display1.jpg)' }}
@@ -101,7 +102,7 @@ const ExploreCollections = () => {
           ))}
         </div>
         <div className="text-center text-black">
-          <button className="px-8 py-4 border-gray-300 border-2 rounded-lg hover:bg-gray-200">
+          <button className="md:px-8 md:py-4 px-4 py-2 border-gray-300 border-2 rounded-lg hover:bg-gray-200">
             EXPLORE ALL CAMPAIGNS
           </button>
         </div>

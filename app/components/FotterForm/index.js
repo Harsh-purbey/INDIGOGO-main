@@ -3,8 +3,10 @@ import React from 'react';
 const FooterForm = () => {
   return (
     <div className=" bg-[#1F0733] text-white py-[80px] lg:px-[93px] space-y-8 text-3xl font-bold ">
-      <h1 className="text-center">Get the newest campaigns in your inbox</h1>
-      <p className="text-center text-[18px] font-normal">
+      <h1 className="text-center p-2">
+        Get the newest campaigns in your inbox
+      </h1>
+      <p className="text-center text-[18px] font-normal p-2">
         Exclusive weekly updates with new products, drops, and special offers.
       </p>
       <form className=" flex justify-center md:flex-row flex-col gap-4 p-4">
@@ -21,7 +23,7 @@ const FooterForm = () => {
         </button>
       </form>
 
-      <p className="text-[14px] text-center font-normal">
+      <p className="text-[14px] text-center font-normal p-2">
         By clicking “Sign me up” I have read and agree to Indiegogo’s{' '}
         <span className="underline">Terms of Use</span> and{' '}
         <span className="underline">Privacy Policy</span> .

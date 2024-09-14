@@ -14,12 +14,12 @@ const Copyright = () => {
 
         <div className="flex gap-6 text-sm flex-wrap justify-center">
           {/* <div className="flex gap-6"> */}
-          <p>Terms of Use</p>
-          <p>Privacy Policy</p>
-          <p>Cookie Policy</p>
+          <p className="text-center">Terms of Use</p>
+          <p className="text-center">Privacy Policy</p>
+          <p className="text-center">Cookie Policy</p>
           {/* </div> */}
-          <p>Do Not Sell My Personal Information</p>
-          <p className="opacity-50 md:opacity-100">
+          <p className="text-center">Do Not Sell My Personal Information</p>
+          <p className="opacity-50 md:opacity-100 text-center">
             © 2024 Indiegogo, Inc. All Rights Reserved
           </p>
         </div>

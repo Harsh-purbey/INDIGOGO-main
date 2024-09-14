@@ -5,9 +5,11 @@ import { CiBookmark } from 'react-icons/ci';
 const PopularCampaigns = () => {
   const arr = [1, 2, 3, 4, 5];
   return (
-    <div className="bg-white lg:px-[93px] lg:pt-[93px] lg:pb-[43px] space-y-10">
+    <div className="bg-white lg:px-[93px] lg:pt-[93px] lg:pb-[43px] space-y-10 p-4">
       <div className="flex justify-between w-full">
-        <h1 className="text-4xl font-bold text-black">Popular Campaigns</h1>
+        <h1 className=" text-3xl md:text-4xl font-bold text-black">
+          Popular Campaigns
+        </h1>
         <div className="space-x-2 pr-4 hidden lg:block">
           <button className="text-gray-700 p-4 bg-gray-200 border-gray-400 border-2 rounded-lg text-xl font-thin">
             <FaArrowLeft />
@@ -22,11 +24,11 @@ const PopularCampaigns = () => {
           {arr.map((value, index) => (
             <li
               key={index}
-              className="space-y-4 cursor-pointer  text-black group transition-all duration-100"
+              className="space-y-4 cursor-pointer ml-2 text-black group transition-all duration-100"
             >
               <div
                 style={{ backgroundImage: 'url(./images/display1.jpg)' }}
-                className="p-4 w-[306px] h-[305px] bg-cover rounded-lg group-hover:contrast-50"
+                className="p-4 w-[255px] md:w-[306px] h-[305px] bg-cover rounded-lg group-hover:contrast-50"
               >
                 <div className="flex justify-between flex-col h-full w-full">
                   <div className="flex justify-between">
@@ -49,11 +51,13 @@ const PopularCampaigns = () => {
                 <p className="uppercase font-thin">Starting at</p>
                 <div className="space-x-3">
                   {' '}
-                  <span className="text-xl font-bold">₹32,583</span>{' '}
-                  <span className="text-lg font-thin line-through text-gray-700 ">
+                  <span className="md:text-xl md:font-bold text-sm font-thin">
+                    ₹32,583
+                  </span>{' '}
+                  <span className="md:text-xl md:font-bold text-sm font-thin line-through text-gray-700 ">
                     ₹47,699 INR
                   </span>{' '}
-                  <span className="text-lg font-thin line-through text-red-500 ">
+                  <span className="md:text-xl md:font-bold text-sm font-thin line-through text-red-500 ">
                     (31% OFF)
                   </span>{' '}
                 </div>
@@ -73,7 +77,7 @@ const PopularCampaigns = () => {
         </ul>
       </div>
       <div className="text-center text-black">
-        <button className="px-8 py-4 border-gray-300 border-2 rounded-lg hover:bg-gray-200">
+        <button className="md:px-8 md:py-4 px-4 py-2 border-gray-300 border-2 rounded-lg hover:bg-gray-200">
           EXPLORE ALL CAMPAIGNS
         </button>
       </div>
