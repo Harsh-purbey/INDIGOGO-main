@@ -18,6 +18,29 @@ const DisplayScreen = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div
@@ -64,8 +87,8 @@ const DisplayScreen = () => {
               className="flex gap-8 overflow-y-auto no-scrollbar"
             >
               {arr.map((value, index) => (
-                <li key={index} className="">
-                  <div className="md:w-[300px] md:h-[150px] w-[90px] h-[100px] bg-red-500 border-disbtn border-2 rounded-lg">
+                <li key={index} className="mx-auto">
+                  <div className="md:w-[300px] md:h-[150px] w-[100px] h-[100px] bg-red-500 border-disbtn border-2 rounded-lg">
                     <img
                       src="./images/display1.jpg"
                       className="w-full h-full rounded-lg"
