@@ -1,10 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 // import Slider from 'react-slick';
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 
 const BlogDisplay = () => {
-  const arr = [1, 2, 3, 4, 5, 6];
+  const navigate = useNavigate();
+  const arr = [
+    { id: 0, img: './images/car1.jpg' },
+    { id: 1, img: './images/car2.jpg' },
+    { id: 2, img: './images/car3.jpg' },
+    { id: 3, img: './images/car4.jpg' },
+    { id: 4, img: './images/car5.jpg' },
+    { id: 5, img: './images/car6.jpg' },
+  ];
   return (
     <div className=" w-full h-fit bg-[#242424] ">
       <div className=" h-full px-2 md:px-16 py-8  grid md:grid-cols-3  gap-4 space-y-10 md:space-y-0">
@@ -12,8 +21,9 @@ const BlogDisplay = () => {
           {arr.map((value, index) => (
             <div key={index} className="p-1 md:py-4 md:px-28 space-y-2">
               <img
-                src="./images/display1.jpg"
+                src={value.img}
                 className="w-full h-56 md:h-[400px]"
+                onClick={() => navigate(`/blog/${value.id}`)}
               />
               <p className="text-white uppercase text-sm md:text-xl">
                 August 26, 2024 · IGG, Products

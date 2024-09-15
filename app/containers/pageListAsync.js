@@ -13,6 +13,10 @@ export const Blog = loadable(() => import('./Blog'), {
   fallback: <Loading />,
 });
 
+export const DynamicBlog = loadable(() => import('./DynamicBlog'), {
+  fallback: <Loading />,
+});
+
 // Static Pages
 export const NotFound = loadable(() => import('./NotFound'), {
   fallback: <Loading />,

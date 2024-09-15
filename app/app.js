@@ -7,7 +7,12 @@ import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import createReducer from './redux/reducers';
 import rootSaga from './redux/rootSaga';
-import { Landing, NotFound, Blog } from './containers/pageListAsync';
+import {
+  Landing,
+  NotFound,
+  Blog,
+  DynamicBlog,
+} from './containers/pageListAsync';
 
 const sagaMiddleware = createSagaMiddleware();
 const reducer = createReducer();
@@ -29,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<DynamicBlog />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
