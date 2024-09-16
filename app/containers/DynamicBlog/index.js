@@ -12,7 +12,7 @@ const DynamicBlog = () => {
     { id: 4, img: '../images/car5.jpg' },
     { id: 5, img: '../images/car6.jpg' },
   ];
-
+ 
   return (
     <Fragment>
       <BlogNav />

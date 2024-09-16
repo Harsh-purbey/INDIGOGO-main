@@ -9,10 +9,12 @@ import createReducer from './redux/reducers';
 import rootSaga from './redux/rootSaga';
 import {
   Landing,
+  Collections,
   NotFound,
   Blog,
   DynamicBlog,
 } from './containers/pageListAsync';
+// import Collections from './containers/Collections';
 
 const sagaMiddleware = createSagaMiddleware();
 const reducer = createReducer();
@@ -34,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/collections" element={<Collections />} />
           <Route path="/blog/:id" element={<DynamicBlog />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

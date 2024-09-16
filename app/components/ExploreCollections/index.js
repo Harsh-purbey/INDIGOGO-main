@@ -4,8 +4,10 @@ import { CiStar } from 'react-icons/ci';
 import { GiWatch } from 'react-icons/gi';
 import { PiGameControllerLight, PiBicycleLight } from 'react-icons/pi';
 import { CiBookmark } from 'react-icons/ci';
+import { useNavigate } from 'react-router-dom';
 
 const ExploreCollections = () => {
+  const navigate = useNavigate();
   const arr = [1, 2, 3, 4, 5, 6, 7];
   return (
     <div className=" w-full bg-expbg lg:px-[93px] lg:pt-[100px] lg:pb-[43px] py-10 px-1">
@@ -102,7 +104,10 @@ const ExploreCollections = () => {
           ))}
         </div>
         <div className="text-center text-black">
-          <button className="md:px-8 md:py-4 px-4 py-2 border-gray-300 border-2 rounded-lg hover:bg-gray-200">
+          <button
+            onClick={() => navigate('/collections')}
+            className="md:px-8 md:py-4 px-4 py-2 border-gray-300 border-2 rounded-lg hover:bg-gray-200"
+          >
             EXPLORE ALL CAMPAIGNS
           </button>
         </div>

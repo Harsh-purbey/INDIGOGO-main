@@ -68,3 +68,24 @@ export const BlogCopyright = loadable(
     fallback: <Loading />,
   },
 );
+
+export const CollectionNavbar = loadable(
+  () => import('./CollectionComponents/CollectionNavbar'),
+  {
+    fallback: <Loading />,
+  },
+);
+
+export const CollectionDiscription = loadable(
+  () => import('./CollectionComponents/CollectionDiscription'),
+  {
+    fallback: <Loading />,
+  },
+);
+
+export const CollectionCards = loadable(
+  () => import('./CollectionComponents/CollectionCards'),
+  {
+    fallback: <Loading />,
+  },
+);
